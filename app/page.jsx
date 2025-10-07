@@ -33,10 +33,15 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuresData.map((feature, index) => (
               <Card className="p-6" key={index}>
-                <CardContent className="space-y-4 pt-4">
+                <CardContent 
+  className="space-y-4 pt-4 pb-4"
+  style={{
+    borderRadius: '30px'
+  }}
+>
                   {feature.icon}
-                  <h3 className="text-xl font-semibold">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <h3 className="text-xl font-semibold text-center">{feature.title}</h3>
+                  <p className="text-gray-600 text-center ">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
