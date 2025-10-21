@@ -88,9 +88,9 @@ export const howItWorksData = [
 // Testimonials Data
 export const testimonialsData = [
   {
-    name: "Sarah Johnson",
-    role: "Small Business Owner",
-  image: "/avatars/sarah.opt.jpg",
+    name: "Shiksha",
+    role: "Student, Uttarakhand",
+  image: "/avatars/image.png",
     quote:
       "Finnexus helped me spot slow leaks in my expenses and negotiate two vendor contracts. I recouped my subscription cost in the first month.",
   },
