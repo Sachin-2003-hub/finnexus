@@ -81,12 +81,22 @@ const Header = async () => {
           </SignedIn>
         </div>
 
-        {/* Mobile Hamburger */}
-        <div className="md:hidden">
+        {/* Mobile: separated hamburger and profile */}
+        <div className="md:hidden flex items-center gap-3">
           <Drawer direction="right">
             <DrawerTrigger asChild>
-              <Button variant="outline" size="icon" aria-label="Open menu">
-                <Menu className="h-5 w-5" />
+              {/* 2-line hamburger button */}
+              <Button
+                variant="outline"
+                size="icon"
+                aria-label="Open menu"
+                className="flex items-center justify-center"
+              >
+                <span className="sr-only">Open menu</span>
+                <span aria-hidden className="block w-5 h-5 relative">
+                  <span className="absolute left-0 top-1/4 block h-0.5 w-full bg-current rounded" />
+                  <span className="absolute left-0 bottom-1/4 block h-0.5 w-full bg-current rounded" />
+                </span>
               </Button>
             </DrawerTrigger>
             <DrawerContent className="p-4">
@@ -128,6 +138,17 @@ const Header = async () => {
               </div>
             </DrawerContent>
           </Drawer>
+
+          {/* Keep profile separate visually on mobile (outside the drawer trigger) */}
+          <div className="flex items-center">
+            <SignedIn>
+              <UserButton
+                appearance={{
+                  elements: { avatarBox: "w-10 h-10" },
+                }}
+              />
+            </SignedIn>
+          </div>
         </div>
       </nav>
     </header>

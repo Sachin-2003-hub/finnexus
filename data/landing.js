@@ -90,42 +90,42 @@ export const testimonialsData = [
   {
     name: "Sarah Johnson",
     role: "Small Business Owner",
-    image: "https://randomuser.me/api/portraits/women/75.jpg",
+  image: "/avatars/sarah.opt.jpg",
     quote:
       "Finnexus helped me spot slow leaks in my expenses and negotiate two vendor contracts. I recouped my subscription cost in the first month.",
   },
   {
     name: "Michael Chen",
     role: "Freelancer",
-    image: "https://randomuser.me/api/portraits/men/75.jpg",
+  image: "/avatars/michael.opt.jpg",
     quote:
       "The receipt scanner is spot on. I stopped keeping spreadsheets entirely—tax time was the least stressful it’s ever been.",
   },
   {
     name: "Emily Rodriguez",
     role: "Financial Advisor",
-    image: "https://randomuser.me/api/portraits/women/74.jpg",
+  image: "/avatars/emily.opt.jpg",
     quote:
       "I recommend Finnexus to clients who need clarity fast. The category insights and budgets make conversations concrete and actionable.",
   },
   {
     name: "Aarav Mehta",
     role: "Product Manager, Bengaluru",
-    image: "https://randomuser.me/api/portraits/men/31.jpg",
+  image: "/avatars/aarav.opt.jpg",
     quote:
       "I finally know where my money goes each week and cut eating-out costs by ₹4,500/month in two months.",
   },
   {
     name: "Neha Sharma",
     role: "Founder, Delhi",
-    image: "https://randomuser.me/api/portraits/women/32.jpg",
+  image: "/avatars/neha.opt.jpg",
     quote:
       "Cashflow used to be a blind spot. Finnexus’ dashboards and alerts helped me avoid two near-misses on payroll and plan ahead.",
   },
   {
     name: "Rajiv Nair",
     role: "Independent Consultant, Mumbai",
-    image: "https://randomuser.me/api/portraits/men/41.jpg",
+  image: "/avatars/rajiv.opt.jpg",
     quote:
       "The monthly report email is gold. In five minutes I know income, spend, and where to trim—no more juggling apps.",
   },

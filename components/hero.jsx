@@ -96,9 +96,9 @@ const HeroSection = () => {
             <div ref={imageRef} className="hero-image">
               <div className="relative mx-auto max-w-3xl rounded-2xl border border-gray-200/50 bg-white/70 backdrop-blur-lg shadow-2xl">
                 <Image
-                  src="/banner.png"
-                  width={1280}
-                  height={720}
+                  src="/banner1.opt.png"
+                  width={1200}
+                  height={675}
                   alt="Dashboard Preview"
                   className="rounded-2xl"
                   priority

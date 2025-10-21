@@ -149,3 +149,78 @@
 .hero-image.scrolled {
   transform: rotateX(0deg) scale(1) translateY(40px);
 }
+
+/* simple fade-in-up animation for elements on load */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-on-load {
+  opacity: 0;
+  transform: translateY(12px);
+  animation-name: fadeInUp;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+/* How It Works section: dark overlay over banner gradient for dark mode */
+.how-it-works-section {
+  background-size: cover;
+}
+/* Apply dark overlay when ancestor has the `dark` class (typical Tailwind setup) */
+.dark .how-it-works-section {
+  background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), linear-gradient(90deg, rgba(47,88,186,1) 0%, rgba(81,207,131,1) 100%);
+}
+
+/* Improve contrast for text inside the section in dark mode */
+.dark .how-it-works-section h2,
+.dark .how-it-works-section h3,
+.dark .how-it-works-section p,
+.dark .how-it-works-section .text-gray-600 {
+  color: rgba(255,255,255,0.92) !important;
+}
+
+/* Make cards slightly translucent/darker in dark mode for separation */
+.dark .how-it-works-section .p-6 {
+  background-color: rgba(255,255,255,0.03) !important;
+  border-color: rgba(255,255,255,0.06) !important;
+}
+
+/* Ensure icon strokes inherit current color where applicable */
+.dark .how-it-works-section svg {
+  color: rgba(255,255,255,0.92);
+}
+
+/* Why Choose Finnexus dark-mode styling (mirror of how-it-works) */
+.why-choose-section {
+  background-size: cover;
+}
+.dark .why-choose-section {
+  background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), linear-gradient(90deg, rgba(47,88,186,1) 0%, rgba(81,207,131,1) 100%);
+}
+.dark .why-choose-section h2,
+.dark .why-choose-section h3,
+.dark .why-choose-section p,
+.dark .why-choose-section .text-gray-600 {
+  color: rgba(255,255,255,0.92) !important;
+}
+.dark .why-choose-section .p-6 {
+  background-color: rgba(255,255,255,0.03) !important;
+  border-color: rgba(255,255,255,0.06) !important;
+}
+.dark .why-choose-section svg {
+  color: rgba(255,255,255,0.92);
+}
+
+/* utility to hide scrollbars while preserving scrolling */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
